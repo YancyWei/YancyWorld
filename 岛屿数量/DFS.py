@@ -29,7 +29,7 @@ class Solution:
         return count
 
     def __dfs(self, grid, i, j, m, n, marked):
-        marked[i][j] = True
+        marked[i][j] = True 
         for direction in self.directions:
             new_i = i + direction[0]
             new_j = j + direction[1]
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     grid = [['1', '1', '1', '1', '0'],
             ['1', '1', '0', '1', '0'],
             ['1', '1', '0', '0', '0'],
-            ['0', '0', '0', '0', '0']]
+            ['0', '0', '0', '1', '0']]
     solution = Solution()
     result = solution.numIslands(grid)
     print(result)

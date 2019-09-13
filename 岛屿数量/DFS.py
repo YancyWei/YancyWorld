@@ -21,13 +21,12 @@ class Solution:
             for j in range(n):
                 # 只要是陆地，且没有被访问过的，就可以使用 DFS 发现与之相连的陆地，并进行标记
                 if not marked[i][j] and grid[i][j] == '1':
-                    # count 可以理解为连通分量，你可以在深度优先遍历完成以后，再计数，
-                    # 即这行代码放在【位置 1】也是可以的
-                    count += 1
                     self.__dfs(grid, i, j, m, n, marked)
-                    # 【位置 1】
+                    # count 可以理解为连通分量
+                    count += 1
         return count
 
+    # DFS深度优先遍历算法
     def __dfs(self, grid, i, j, m, n, marked):
         marked[i][j] = True 
         for direction in self.directions:

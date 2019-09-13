@@ -1,3 +1,5 @@
+# 参考教程
+[点这里](https://leetcode-cn.com/problems/number-of-islands/solution/dfs-bfs-bing-cha-ji-python-dai-ma-java-dai-ma-by-l/)
 # 栈空间
 用来存储当前格子向4个方向的搜索状态
 # DFS特点

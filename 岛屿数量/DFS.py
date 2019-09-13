@@ -28,7 +28,7 @@ class Solution:
 
     # DFS深度优先遍历算法
     def __dfs(self, grid, i, j, m, n, marked):
-        marked[i][j] = True 
+        marked[i][j] = True
         for direction in self.directions:
             new_i = i + direction[0]
             new_j = j + direction[1]

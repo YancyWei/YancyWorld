@@ -25,7 +25,7 @@ class Solution:
                     if cur == target:
                         return step + 1
                     if cur not in deadends:
-                        queue.put((cur, step + 1))  # 将转动厚的数字加入队列中
+                        queue.put((cur, step + 1))  # 将转动后的数字加入队列中
                         deadends.add(cur)  # 更新死亡数字避免重复
         return -1
 
